@@ -9,7 +9,7 @@
   <!--Default grid Hotcue 1-4 -->
   <WidgetGroup>
     <Layout>vertical</Layout>
-    <MinimumSize>40,48</MinimumSize>
+    <MinimumSize>408,48</MinimumSize>
     <MaximumSize>48,48</MaximumSize>
     <SizePolicy>me,min</SizePolicy>
     <Children>
@@ -53,9 +53,9 @@
   <!--Extended grid Hotcue 1-8 -->
   <WidgetGroup>
     <Layout>vertical</Layout>
-    <MinimumSize>76,48</MinimumSize>
+    <MinimumSize>96,48</MinimumSize>
     <MaximumSize>96,48</MaximumSize>
-    <SizePolicy>me,min</SizePolicy>
+    <SizePolicy>min,min</SizePolicy>
     <Children>
       <WidgetGroup>
         <ObjectName>HotcueGrid</ObjectName>

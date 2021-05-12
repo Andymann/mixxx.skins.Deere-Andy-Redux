@@ -80,7 +80,7 @@
   <ObjectName>Mixxx</ObjectName>
   <Style src="skin:../Deere/style.qss" src-mac="skin:../Deere/style-mac.qss"/>
 
-  <Size>1008me,550me</Size>
+  <Size>700me,400me</Size>
   <Layout>horizontal</Layout>
 
   <Children>
