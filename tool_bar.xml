@@ -102,7 +102,7 @@
                 <SetVariable name="state_1_text">4</SetVariable>
                 <SetVariable name="left_connection_control">[EffectRack1_EffectUnit4],group_[Master]_enable</SetVariable>
               </Template>
-
+<!--
               <Template src="skin:knob_toolbar.xml">
                 <SetVariable name="TooltipId">balance</SetVariable>
                 <SetVariable name="group">[Master]</SetVariable>
@@ -110,7 +110,7 @@
                 <SetVariable name="color">purple</SetVariable>
                 <SetVariable name="label">Bal</SetVariable>
               </Template>
-
+-->
             </Children>
           </WidgetGroup>
 
@@ -315,7 +315,7 @@
                   <WidgetGroup><Size>4f,0min</Size></WidgetGroup>
                 </Children>
               </WidgetGroup>
-
+<!--
               <Template src="skin:left_display_4state_button.xml">
                 <SetVariable name="TooltipId">toggle_recording</SetVariable>
                 <SetVariable name="ObjectName">RecordingNotification</SetVariable>
@@ -329,9 +329,10 @@
                 <SetVariable name="left_connection_control">[Recording],toggle_recording</SetVariable>
                 <SetVariable name="display_connection_control">[Recording],status</SetVariable>
               </Template>
+-->
             </Children>
           </WidgetGroup>
-
+<!--
           <Template src="skin:left_display_4state_button.xml">
             <SetVariable name="TooltipId">broadcast_enabled</SetVariable>
             <SetVariable name="ObjectName">LiveBroadcastingNotification</SetVariable>
@@ -345,7 +346,7 @@
             <SetVariable name="left_connection_control">[Shoutcast],enabled</SetVariable>
             <SetVariable name="display_connection_control">[Shoutcast],status</SetVariable>
           </Template>
-
+-->
           <WidgetGroup>
             <Layout>horizontal</Layout>
             <SizePolicy>me,min</SizePolicy>
@@ -410,12 +411,12 @@
 
           <!-- Hack to apply layoutPadding twice here -->
           <WidgetGroup><Size>0f,1min</Size></WidgetGroup>
-
+<!--
           <WidgetGroup>
             <Size>94f,22f</Size>
             <BackPath scalemode="STRETCH_ASPECT">image/mixxx_logo.svg</BackPath>
           </WidgetGroup>
-
+-->
           <WidgetGroup>
             <SizePolicy>min,min</SizePolicy>
             <Layout>horizontal</Layout>

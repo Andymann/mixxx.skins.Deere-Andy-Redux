@@ -10,7 +10,7 @@
     <ObjectName>OverviewRow</ObjectName>
     <Layout>horizontal</Layout>
     <SizePolicy>me,me</SizePolicy>
-    <MinimumSize>-1,46</MinimumSize>
+    <MinimumSize>-1,20</MinimumSize>
     <Children>
       <WidgetGroup>
         <ObjectName>DeckControlsGrid</ObjectName>
