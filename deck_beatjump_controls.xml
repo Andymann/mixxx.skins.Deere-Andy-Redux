@@ -10,14 +10,14 @@
     <Layout>vertical</Layout>
     <SizePolicy>min,min</SizePolicy>
     <Children>
-
+<!--
       <BeatSpinBox>
         <ObjectName>BeatjumpSizeSpinBox</ObjectName>
         <TooltipId>beatjump_size</TooltipId>
         <Size>54f,25f</Size>
         <Value><Variable name="group"/>,beatjump_size</Value>
       </BeatSpinBox>
-
+-->
       <!-- Workaround for layout spacing -->
       <WidgetGroup><Size>0min,2f</Size></WidgetGroup>
 

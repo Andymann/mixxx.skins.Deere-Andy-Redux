@@ -87,9 +87,9 @@
       <Template src="skin:deck_looping_controls.xml"/>
 
       <WidgetGroup><Size>3min,1min</Size></WidgetGroup>
-
+<!--
       <Template src="skin:deck_beatjump_controls.xml"/>
-
+-->
       <WidgetGroup><Size>0min,1min</Size></WidgetGroup>
 
     </Children>

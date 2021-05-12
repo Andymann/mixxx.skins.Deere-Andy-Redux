@@ -73,7 +73,7 @@
           <Template src="skin:deck_controls_row.xml"/>
         </Children>
       </WidgetGroup>
-
+<!--
       <WidgetGroup>
         <ObjectName>DeckRateSlider</ObjectName>
         <Layout>vertical</Layout>
@@ -82,6 +82,7 @@
           <Template src="skin:deck_tempo_column.xml"/>
         </Children>
       </WidgetGroup>
+-->
     </Children>
   </WidgetGroup>
 </Template>
