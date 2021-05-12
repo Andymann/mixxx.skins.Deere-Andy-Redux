@@ -181,6 +181,7 @@
       <Layout>vertical</Layout>
       <Children>
         <!--<Template src="skin:../Deere/tool_bar.xml"/>-->
+        
         <Template src="skin:tool_bar.xml"/>
 
         <!-- regular or maximized library -->
