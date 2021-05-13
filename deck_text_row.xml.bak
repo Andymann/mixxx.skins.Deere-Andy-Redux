@@ -379,7 +379,7 @@
                           </Transform>
                         </Connection>
                       </Label>
-<!--
+
                       <WidgetGroup>
                         <ObjectName>StarratingGutter</ObjectName>
                         <Layout>horizontal</Layout>
@@ -395,7 +395,7 @@
                           <BindProperty>visible</BindProperty>
                         </Connection>
                       </WidgetGroup>
--->
+
                       <WidgetGroup>
                         <ObjectName>PositionGutter</ObjectName>
                         <Layout>horizontal</Layout>
@@ -441,11 +441,143 @@
                             </Connection>
                           </PushButton>
 
-                          
+                          <WidgetGroup>
+                            <Layout>horizontal</Layout>
+                            <Children>
+                              <Label>
+                                <Size>10f,20f</Size>
+                                <ObjectName>BpmKeyInfoShow</ObjectName>
+                              </Label>
+
+                              <Key>
+                                <ObjectName>BpmKeyEditTriggerLabel</ObjectName>
+                                <MinimumSize>30,20</MinimumSize>
+                                <Group><Variable name="group"/></Group>
+                                <SizePolicy>min,</SizePolicy>
+                                <DisplayCents>false</DisplayCents>
+                                <Connection>
+                                  <ConfigKey><Variable name="group"/>,visual_key</ConfigKey>
+                                </Connection>
+                              </Key>
+                            </Children>
+                          </WidgetGroup>
                         </Children>
                       </WidgetGroup>
 
-                      
+                      <WidgetGroup><!-- KeyEditRowExpanded -->
+                        <ObjectName>BpmKeyEditRowExpanded</ObjectName>
+                        <Layout>horizontal</Layout>
+                        <Children>
+                          <WidgetGroup>
+                            <ObjectName>BpmKeyEditRowControls</ObjectName>
+                            <Layout>horizontal</Layout>
+                            <SizePolicy>p,me</SizePolicy>
+                            <MinimumSize>80,20</MinimumSize>
+                            <MaximumSize>120,30</MaximumSize>
+                            <Children>
+                              <Template src="skin:left_right_1state_button.xml">
+                                <SetVariable name="TooltipId">pitch_down</SetVariable>
+                                <SetVariable name="ObjectName">PitchDownButton</SetVariable>
+                                <SetVariable name="MinimumSize"><Variable name="SquareButtonMinimumSize"/></SetVariable>
+                                <SetVariable name="MaximumSize"><Variable name="SquareButtonMaximumSize"/></SetVariable>
+                                <SetVariable name="SizePolicy"><Variable name="SquareButtonSizePolicy"/></SetVariable>
+                                <SetVariable name="state_0_text"></SetVariable>
+                                <SetVariable name="state_0_pressed">icon/ic_remove_48px.svg</SetVariable>
+                                <SetVariable name="state_0_unpressed">icon/ic_remove_48px.svg</SetVariable>
+                                <SetVariable name="left_connection_control"><Variable name="group"/>,pitch_down</SetVariable>
+                                <SetVariable name="right_connection_control"><Variable name="group"/>,pitch_down_small</SetVariable>
+                              </Template>
+
+                              <Template src="skin:left_right_1state_button.xml">
+                                <SetVariable name="TooltipId">pitch_up</SetVariable>
+                                <SetVariable name="ObjectName">PitchUpButton</SetVariable>
+                                <SetVariable name="MinimumSize"><Variable name="SquareButtonMinimumSize"/></SetVariable>
+                                <SetVariable name="MaximumSize"><Variable name="SquareButtonMaximumSize"/></SetVariable>
+                                <SetVariable name="SizePolicy"><Variable name="SquareButtonSizePolicy"/></SetVariable>
+                                <SetVariable name="state_0_text"></SetVariable>
+                                <SetVariable name="state_0_pressed">icon/ic_add_48px.svg</SetVariable>
+                                <SetVariable name="state_0_unpressed">icon/ic_add_48px.svg</SetVariable>
+                                <SetVariable name="left_connection_control"><Variable name="group"/>,pitch_up</SetVariable>
+                                <SetVariable name="right_connection_control"><Variable name="group"/>,pitch_up_small</SetVariable>
+                              </Template>
+
+                              <Template src="skin:left_right_1state_button.xml">
+                                <SetVariable name="TooltipId">sync_reset_key</SetVariable>
+                                <SetVariable name="ObjectName">SyncKeyButton</SetVariable>
+                                <SetVariable name="MinimumSize">46,22</SetVariable>
+                                <SetVariable name="MaximumSize">46,22</SetVariable>
+                                <SetVariable name="SizePolicy">f,f</SetVariable>
+                                <SetVariable name="state_0_text">Match</SetVariable>
+                                <SetVariable name="state_0_pressed"></SetVariable>
+                                <SetVariable name="state_0_unpressed"></SetVariable>
+                                <SetVariable name="left_connection_control"><Variable name="group"/>,sync_key</SetVariable>
+                                <SetVariable name="right_connection_control"><Variable name="group"/>,reset_key</SetVariable>
+                              </Template>
+                            </Children>
+                          </WidgetGroup><!-- KeyEditRowControls -->
+
+                          <WidgetGroup>
+                            <!-- The key edit controls are aligned to the right because the key
+                                  widget widths can rapidly change, especially with traditional
+                                  notation selected in the preferences. The controls stay calm
+                                  this way. -->
+                            <Layout>stacked</Layout>
+                            <Size>100f,</Size>
+                            <Children>
+                              <PushButton>
+                                <ObjectName>BpmKeyEditTrigger</ObjectName>
+                                <TooltipId>visual_key</TooltipId>
+                                <NumberStates>1</NumberStates>
+                                <State>
+                                  <Number>0</Number>
+                                  <Pressed scalemode="STRETCH"></Pressed>
+                                  <Unpressed scalemode="STRETCH"></Unpressed>
+                                </State>
+                                <Connection>
+                                  <ConfigKey>[Deere],key_layout_next</ConfigKey>
+                                </Connection>
+                              </PushButton>
+
+                              <WidgetGroup>
+                                <ObjectName>KeyDisplay</ObjectName>
+                                <Layout>horizontal</Layout>
+                                <Size>100f,-1min</Size>
+                                <Children>
+                                  <Label>
+                                    <Size>10f,20f</Size>
+                                    <ObjectName>BpmKeyInfoHide</ObjectName>
+                                  </Label>
+
+                                  <Key>
+                                    <ObjectName>BpmKeyEditTriggerLabel</ObjectName>
+                                    <Group><Variable name="group"/></Group>
+                                    <SizePolicy>e,min</SizePolicy>
+                                    <DisplayKey>true</DisplayKey>
+                                    <DisplayCents>false</DisplayCents>
+                                    <Alignment>center</Alignment>
+                                    <Elide>right</Elide>
+                                    <Connection>
+                                      <ConfigKey><Variable name="group"/>,visual_key</ConfigKey>
+                                    </Connection>
+                                  </Key>
+
+                                  <Key>
+                                    <ObjectName>BpmKeyEditTriggerLabel</ObjectName>
+                                    <Group><Variable name="group"/></Group>
+                                    <SizePolicy>min,min</SizePolicy>
+                                    <DisplayKey>false</DisplayKey>
+                                    <DisplayCents>true</DisplayCents>
+                                    <Alignment>right</Alignment>
+                                    <Connection>
+                                      <ConfigKey><Variable name="group"/>,visual_key</ConfigKey>
+                                    </Connection>
+                                  </Key>
+                                </Children>
+                              </WidgetGroup>
+                            </Children>
+                          </WidgetGroup><!-- KeyEditTrigger -->
+                        </Children>
+                      </WidgetGroup><!-- KeyEditRowExpanded -->
                     </Children>
                   </WidgetStack><!-- KeyEditRow -->
                 </Children>

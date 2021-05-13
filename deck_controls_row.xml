@@ -69,12 +69,12 @@
           </WidgetGroup>
         </Children>
       </WidgetGroup>
-<!--
+
       <WidgetGroup>
-        <Size>3min,1min</Size>
+        <Size>25min,1min</Size>
         <MaximumSize>12,-1</MaximumSize>
       </WidgetGroup>
--->
+
       <Template src="skin:hotcues.xml"/>
 
 <!--DA
@@ -86,9 +86,9 @@
       <Template src="skin:special_cues.xml"/>
 -->
       <!-- Expanding spacers in between control contexts -->
-<!--DA
-      <WidgetGroup><Size>3min,1min</Size></WidgetGroup>
--->
+
+      <WidgetGroup><Size>25min,1min</Size></WidgetGroup>
+
       <Template src="skin:deck_looping_controls.xml"/>
 
 <!--DA

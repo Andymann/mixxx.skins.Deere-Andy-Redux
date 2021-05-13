@@ -58,7 +58,7 @@
                 <SetVariable name="color">green</SetVariable>
                 <SetVariable name="label">Master</SetVariable>
               </Template>
-
+<!--
               <Template src="skin:left_2state_button.xml">
                 <SetVariable name="TooltipId">EffectUnit_master_enabled</SetVariable>
                 <SetVariable name="ObjectName">FxAssignmentButton</SetVariable>
@@ -102,6 +102,8 @@
                 <SetVariable name="state_1_text">4</SetVariable>
                 <SetVariable name="left_connection_control">[EffectRack1_EffectUnit4],group_[Master]_enable</SetVariable>
               </Template>
+-->
+          
 <!--
               <Template src="skin:knob_toolbar.xml">
                 <SetVariable name="TooltipId">balance</SetVariable>
