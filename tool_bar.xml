@@ -21,6 +21,12 @@
         <PixmapsDischarging scalemode="STRETCH_ASPECT">icon/ic_battery_discharging_%1_48px.svg</PixmapsDischarging>
       </Battery>
 
+	  <Template src="skin:hide_show_button.xml">
+				<SetVariable name="TooltipId">maximize_library</SetVariable>
+				<SetVariable name="object_name">LibraryToggle</SetVariable>
+				<SetVariable name="control">[Master],maximize_library</SetVariable>
+				</Template>
+
       <WidgetGroup>
         <ObjectName>ToolBarLeft</ObjectName>
         <Layout>horizontal</Layout>
@@ -51,6 +57,7 @@
             <SizePolicy>min,min</SizePolicy>
             <Layout>horizontal</Layout>
             <Children>
+			<!--
               <Template src="skin:knob_toolbar.xml">
                 <SetVariable name="TooltipId">master_gain</SetVariable>
                 <SetVariable name="group">[Master]</SetVariable>
@@ -58,6 +65,7 @@
                 <SetVariable name="color">green</SetVariable>
                 <SetVariable name="label">Master</SetVariable>
               </Template>
+			-->
 <!--
               <Template src="skin:left_2state_button.xml">
                 <SetVariable name="TooltipId">EffectUnit_master_enabled</SetVariable>

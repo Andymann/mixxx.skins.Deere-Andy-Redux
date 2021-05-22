@@ -30,6 +30,7 @@
                 <Layout>vertical</Layout>
                 <Children>
                   <Template src="skin:preview_deck.xml"/>
+				  <!--
                   <WidgetGroup>
                     <Layout>horizontal</Layout>
                     <Children>
@@ -41,6 +42,7 @@
                       </Template>
                     </Children>
                   </WidgetGroup>
+				  -->
                   <!-- QSplitter between LibrarySidebar and CoverArt -->
                   <Splitter>
                     <ObjectName>LibraryCoverArtSplitter</ObjectName>
